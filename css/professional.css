@@ -1,0 +1,157 @@
+body {
+  background-color: rgb(162, 197, 230);
+  color: #000080;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+div {
+  background-color: #dce7f5; 
+  color: #000080; 
+  padding: 4px 7px;
+}
+
+.topnav {
+  background-color: #0d3b66;
+  overflow: hidden;
+  flex-direction: row;
+  border: 0;
+  margin: 10;
+}
+
+.topnav a {
+  float: left;
+  color: #faf0ca;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #faf0ca;
+  color: #0d3b66;
+}
+
+/* Add a color to the active/current link */
+.topnav .active {
+  background-color: #51728c;
+  color: #faf0ca;
+}
+
+.topnav button {
+  float: right;
+  background-color: #51728c;
+  color: #faf0ca;
+  text-align: center;
+  padding: 14px 16px;
+  font-family: inherit;
+}
+
+.home-container {
+  background-color: #dce7f5;
+  padding: 3px;
+}
+
+.cursive {
+  font-family: Zapfino;
+}
+
+#home-tag {
+  line-height: 1; 
+  padding-top: 17px
+}
+
+.headshot {
+  background-image: url("../attatchments/headshot_full_face.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 500px;
+  border-radius: 20px;
+  margin: auto;
+  width: 50%;
+  position: relative;
+}
+
+.headshot_text {
+  padding: 2%;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  line-height: 1.6;
+}
+
+.headshot_text {
+  position: absolute;
+  background-color: rgba(132, 132, 132, 0.5);
+  color:#faf0ca;
+  border-radius: 10px;
+  padding: 1% 1.5%;
+  letter-spacing: 2px;
+}
+
+#name {
+  bottom: 17%;
+  padding-top: 8%;
+}
+
+#location {
+  bottom: 8%
+}
+
+.hobby-pics {
+  grid-column: span 4; 
+  grid-row: span 3;
+
+  background-image: url('../attatchments/art.jpeg');
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat;
+  display: flex;
+  height: 300px;
+  border-radius: 20px;
+  margin: auto;
+  width: 50%;
+  position: relative;
+}
+
+.portfolio_bg {
+  background-image: url("../attatchments/portfolio_bg.png");
+  background-attachment: scroll;
+  background-position: top center;
+  background-size: cover;
+}
+
+.portfolio .h2 {
+  color: #faf0ca;
+  background-color: #194769;
+}
+
+.portfolio .p {
+  display: none;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+.portfolio.h2:hover + .portfolio.p {
+  display: block;
+}
+
+.circle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle.expanded {
+  display: flex; 
+}

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta
+      charset="UTF-8"
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/professional.css" text="text/css" id="page_style"/>
+    <script src="functions.js"></script>
+  </head>
+
+  <body class="portfolio_bg">
+    <div class="topnav">
+      <a
+        class="cursive"
+        id="home-tag"
+        href="index.html"
+        >Caro</a
+      >
+      <a href="portfolio.html">Portfolio</a>
+      <a href="qualifications.html">Qualifications</a>
+      <a href="service.html">Service</a>
+      <a href="ai.html">AI</a>
+      <button class="switch-button" onclick="toggleTheme()">Style Switch</button>
+    </div>
+
+    <div class="portfolio portfolio-container">
+
+      <div class="project-thumbnails">
+        <div class="arrow left-arrow" onclick="previousProject()">&#9664;</div>
+        
+        <div class="thumbnail" onclick="showProject('project1')">Third Place App</div>
+        <div class="thumbnail" onclick="showProject('project2')">Automated Blinds</div>
+        <div class="thumbnail" onclick="showProject('project3')">SHPE Mobile App</div>
+        <div class="thumbnail" onclick="showProject('project4')">Battleship</div>
+        <div class="thumbnail" onclick="showProject('project5')">Atlassian Internships</div>
+        <div class="thumbnail" onclick="showProject('project6')">First Website</div>
+        <div class="thumbnail" onclick="showProject('project7')">Hello World</div>
+        
+        <div class="arrow right-arrow" onclick="nextProject()">&#9654;</div>
+      </div>
+
+
+
+      <div class="project-display" id="currentProject">
+        <div class="current-viewing" id="project1" style="display: none;">
+          <h2>** Third Place App **</h2>
+          <p>
+            The concept of the "third place," as coined by Ray Oldenburg in
+            <a
+              href="https://archive.org/details/greatgoodplaceca00olde_2/page/n9/mode/2up"
+              target="_blank"
+              >The Great Goodplace</a
+            >, refers to social environments distinct from the conventional
+            settings of home and the workplace. These spaces play a crucial role
+            in fostering community, social interaction, and a sense of belonging.
+            Examples include cafes, bars, community centers, libraries, and other
+            locales where people gather beyond their homes and workplaces.
+          </p>
+          <p>
+            In essence, the third place serves as a vital component for a
+            well-rounded and fulfilling life, complementing the private sphere of
+            home and the professional realm of work. It is characterized by
+            inclusivity and sociability, providing individuals with opportunities
+            for casual encounters, discussions, and shared experiences.
+          </p>
+          <p>
+            I would like to create an extension to google maps that can identify
+            these spaces and describe their atmosphere. I particularly would want
+            it to have indicators of if there are paywalls to be there. I often
+            find it hard when I'm in a new city to find good places to study since
+            there is not one word that encompasses all the different types of
+            study vibes. This is a planned pursuit.
+          </p>
+        </div>
+
+        <div class="current-viewing" id="project2" style="display: none;">
+          <h2>** Automated Blinds **</h2>
+          <p>
+            Transforming my blinds into smart, motorized systems involves selecting
+            blinds suitable for motorization, like roller or corded blinds. After
+            choosing a DC motor that matches the blinds' size and weight, I will
+            integrate it with a motor controller. Power will be supplied through a
+            battery or plug-in source, and I'll opt for a convenient control
+            system—remote, app, or smart home integration. Installation includes
+            attaching the motor, concealing wires for a tidy look, and ensuring
+            safety. Thorough testing guarantees seamless response to control
+            commands. Optionally, sensors for automated adjustments based on
+            environmental conditions are considered. The final touch involves
+            securing the blinds and motor, with compatibility for integration into
+            existing smart home setups.
+          </p>
+        </div>
+
+        <div class="current-viewing" id="project3" >
+          <h2>SHPE Mobile App</h2>
+          <p>
+            Solidarity is very important to me and I prioritize seeking out
+            communities that I resonate with such as women and latinos in STEM.
+            During my time in school, I joined
+            <a href="https://www.tamushpe.org/">SHPE</a>, Society of Hispanic
+            Professional Engineers. In Texas, everything is bigger and my chapter is
+            huge, over 730 active members. There was a need for a better way to
+            manage the point system and disseminate information, so a mobile app
+            development team was created. Thorough this team I have been building my
+            skills in javascript and react and branching into UI/UX design.
+          </p>
+        </div>
+
+        <div class="current-viewing" id="project4" style="display: none;">
+          <h2>Battleship</h2>
+          <p>
+            My <a
+              href="https://github.com/carolina367/Battleship-Carolina_Barboza"
+              target="_blank"
+            > Battleship </a>
+            game was crafted using Java with a JavaFX GUI. The game mirrors the
+            strategic essence of the classic Battleship, challenging players to
+            locate their adversary’s fleet on a grid. The GUI, designed for clarity
+            and ease of use, provides a visually appealing interface. Single-player
+            mode is available, pitting users against a computer opponent powered by
+            a strategic algorithm. The codebase is structured and commented for
+            potential future enhancements. This project serves as a testament to
+            proficiency in Java and JavaFX, demonstrating the ability to create an
+            interactive and engaging digital version of a classic game.
+          </p>
+        </div>
+
+        <div class="current-viewing" id="project5" style="display: none;">
+          <h2>Atlassian Internships: </h2>
+          <h3>Halp Team</h2>
+          <div>
+            <video width="320" height="240" controls>
+              <source
+                src="attatchments/2022 atlassian intern loom.mp4"
+                type="video/mp4"
+              />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+
+          <h3>Content Team</h2>
+          <div>
+            <p>
+              During my remote tenure with the
+              <a
+                href="https://www.loom.com/share/76a50238c316464bb7721481651aa6eb?sid=50b8ea89-457c-4d99-85d9-5120f0580b20"
+                target="_blank"
+                >Content Platform Team</a
+              >
+              at Atlassian, I was involved in several significant projects. One of the
+              key initiatives was the transformation of release notes into a more
+              user-friendly format, aligning with Atlassian’s customer-centric
+              approach. Another major task was the integration of Contentful with the
+              Atlassian support website. This integration allowed us to separate
+              content from the UI, simplifying the content authoring process and
+              enhancing content reuse. Additionally, I was responsible for the
+              implementation of SeaPuppy as a content gateway. This strategic
+              implementation improved scalability and performance, and laid the
+              groundwork for its potential use across multiple Atlassian products.
+            </p>
+          </div>
+
+          <h3>Trello Team</h2>
+          <div>
+            <p>
+              Consolidated 30 million user accounts across company products with
+              Atlassian SSO to increase cross-platform accessibility. Implemented an
+              advanced search feature to enable searchability of cards amongst a
+              user’s personal Trello boards, reducing the need to manually search
+              content.
+            </p>
+          </div>
+        </div>
+
+        <div class="current-viewing" id="project6" style="display: none;">
+          <h2>First Website</h2>
+          <p>
+          My inaugural website was a venture into the world of web development,
+          hosted on <a href="https://www.pythonanywhere.com/">Python Anywhere</a>. 
+          Embracing Bootstrap for its design elements,
+          the site centered around promoting recycling initiatives in Austin.
+          Although the project is no longer accessible due to account inactivity,
+          it marked the initiation of my coding journey.
+          </p>
+          <p>
+            The site showcased my early proficiency in front-end development,
+            leveraging Bootstrap's responsive framework to create an aesthetically
+            pleasing and user-friendly interface. By focusing on a local issue like
+            recycling, the project aimed to raise awareness and encourage
+            sustainable practices within the Austin community.
+          </p>
+        </div>
+
+        <div class="current-viewing" id="project7" style="display: none;">
+          <h2>Hello World</h2>
+          <p>
+            In my sophomore year of high school, I took my first step into coding
+            with a simple "Hello, World!" program. Surprising myself, I never
+            anticipated diving into programming, yet this initial foray marked the
+            start of a journey into the world of coding and technology.
+          </p>
+        </div>
+    </div>
+    </div>
+  </body>
+</html>
